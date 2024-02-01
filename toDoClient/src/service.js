@@ -1,7 +1,6 @@
 import axios from 'axios';
 
-// const apiUrl = "http://localhost:7008"
-axios.defaults.baseURL = "http://localhost:7008";
+axios.defaults.baseURL = process.env.baseUrl;
 
 axios.interceptors.response.use(
   response => response,
